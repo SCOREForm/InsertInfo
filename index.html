@@ -29,13 +29,15 @@
         background: 	#5A5A5A; 
       }
       </style>  
-<body style="background-color: lightblue;">
-
+<body style="background-color: #0014DB;">
+<div id="header">
+  <div id ="logo"><img src="SLB.png" alt="logo" width="130" height="80"></div>
+  <div id="heading">
+    <h2>S.C.O.R.E.</h2>
+<h3>SLB COmpetency (based) Recruitment Evaluation</h3></div>
+</div>  
 
 <div id="formtop" style="text-align: center;">
-<h2>S.C.O.R.E.</h2>
-<h3>Schlumberger COmpetency (based) Recruitment Evaluation</h3>
-
 <div id="userForm">
 <form>
   <p><label for="fname">Enter Name of the candidate:</label> 
@@ -114,7 +116,9 @@
     </tr>
   </table>
   </form>
-  <div id="stickyBottomCore"><button id ="clearCore" type ="button" onclick="clearRadioButtonscore(),clearcheckcore()"> Clear Selection</button> </div>
+  <div id="stickyBottomCore">
+  <span class="alerts">*Minimum 3 required</span><br>
+    <button id ="clearCore" type ="button" onclick="clearRadioButtonscore(),clearcheckcore()"> Clear Selection</button> </div>
  </Div>
 
 <Div id="WlDiv">
@@ -175,7 +179,9 @@
     </tr>
   </table>
  </form>
- <div id="stickyBottomWl"><button id ="clearWl" type ="button" onclick="clearRadioButtonswl(),clearcheckwl()"> Clear Selection</button> </div>
+ <div id="stickyBottomWl">
+  <span class="alerts">*Minimum 1 required</span><br>
+  <button id ="clearWl" type ="button" onclick="clearRadioButtonswl(),clearcheckwl()"> Clear Selection</button> </div>
  </Div>
 
 <Div id="comDiv" >
@@ -393,7 +399,9 @@
     </tr>
   </table>
   </form>
-  <div id="stickyBottom"><button id ="clearCom" type ="button" onclick="clearRadioButtonsCom(),clearcheckCom()"> Clear Selection</button> </div>
+  <div id="stickyBottom">
+    <span class="alerts">*Minimum 6 required</span><br>
+    <button id ="clearCom" type ="button" onclick="clearRadioButtonsCom(),clearcheckCom()"> Clear Selection</button> </div>
   </div>
 </div>
 
@@ -401,6 +409,7 @@
   <!-- <button id ="clearCore" type ="button" onclick="clearRadioButtonsInt(),clearRadioButtonsAdv(),clearRadioButtonsExp()"> Clear Expertise Selection</button>  -->
   <!-- <button id ="button" type="button"onclick="getCheckboxCount()"> Submit2 </button> -->
   <!-- <button onclick="G08()">Count Checkboxes</button>  -->
+  <span class="alerts">*Please Click on refresh button everytime a new change is made</span><br>
   <button id ="refresh" type="button"onclick="location.reload();"> Refresh </button>
   <button id ="submitbutton" type="button"onclick="showName(),calculateGrade(),showResult()" disabled > Submit </button>
 </div>
