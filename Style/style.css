@@ -2,6 +2,30 @@
     border-radius: 5px;
 }
 
+img {
+    vertical-align: middle;
+    border: 2px black solid;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+#header{
+    width: 100%;
+    display: flex;
+}
+  
+#logo{
+    text-align: left;
+    float: left;
+    width: 10%;
+}  
+
+#heading{
+    float: right;
+    width: 90%;
+    text-align: center;
+}
+
 #comDiv{
     /* padding-top: 30px; */
     /* padding-bottom: 20px; */
@@ -41,10 +65,17 @@
     padding-left: 26px;
     padding-top: 10px;
 }
+ 
 
 #actionButtons{
     padding-top: 20px;
     text-align: center;
+}
+
+.alerts{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
 }
 
 #refresh{
@@ -52,6 +83,7 @@
     padding-left:10px ;
     font-size: 20px;
     border-radius: 5px;
+    margin-top:5px 
 }
 
 #submitbutton{
@@ -59,6 +91,7 @@
     padding-left:10px ;
     font-size: 20px;
     border-radius: 5px;
+    margin-top:5px
 }
 
 #formtop{
@@ -68,6 +101,7 @@
 #Elements{
     padding-top: 40px;
     padding-left: 10px;
+    font-size: 13px;
 }
 
 #userForm{
@@ -111,7 +145,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: lightblue;
+    background-color: #0014DB;
     padding-top: 30px;
     font-size: 25px;
   }
@@ -120,7 +154,7 @@
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    background-color: lightblue;
+    background-color: #0014DB;
     padding-top: 30px;
     padding-bottom: 20px;
     font-size: 25px;
@@ -130,7 +164,7 @@
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    background-color: lightblue;
+    background-color: #0014DB;
     padding-top: 46px;
     padding-bottom: 20px;
     font-size: 25px;
@@ -140,7 +174,7 @@
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    background-color: lightblue;
+    background-color: #0014DB;
     padding-top: 46px;
     padding-bottom: 20px;
     font-size: 25px;
