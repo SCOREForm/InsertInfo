@@ -33,12 +33,11 @@ img {
     border: 1px solid black;
     width:38%;
     float: left;
-    height: 400px;
+    height: 370px;
     overflow-y: scroll;
 }
 
 #WlDiv{
-    padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
     border-top: 1px solid black;
@@ -49,7 +48,6 @@ img {
 }
 
 #coreDiv{
-    padding-top: 30px;
     padding-bottom: 20px;
     text-align: center;
     border-top: 1px solid black;
@@ -146,7 +144,7 @@ img {
     position: sticky;
     top: 0;
     background-color: #0014DB;
-    padding-top: 30px;
+    padding-top: 13px;
     font-size: 25px;
   }
 
@@ -155,7 +153,6 @@ img {
     position: sticky;
     bottom: 0;
     background-color: #0014DB;
-    padding-top: 30px;
     padding-bottom: 20px;
     font-size: 25px;
     text-align: center;
