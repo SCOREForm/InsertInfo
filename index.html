@@ -20,16 +20,16 @@
        
       /* Handle */
       ::-webkit-scrollbar-thumb {
-        background: grey; 
+        background: #0014DB; 
         border-radius: 10px;
       }
       
       /* Handle on hover */
       ::-webkit-scrollbar-thumb:hover {
-        background: 	#5A5A5A; 
+        background: 	#0014DB; 
       }
       </style>  
-<body style="background-color: #0014DB;">
+<body style="background-color: white;color: #0014DB;">
 <div id="header">
   <div id ="logo"><img src="SLB.png" alt="logo" width="130" height="80"></div>
   <div id="heading">
@@ -41,7 +41,7 @@
 <div id="userForm">
 <form>
   <p><label for="fname">Enter Name of the candidate:</label> 
-  <input type="text" id="UserName" name="fname" value=" " oninput="handleRadioHall(),handleRadioBaker(),handleRadioWeather(),handleRadioOther()"><br></p>
+  <input type="text" id="UserName" name="fname" style="border: 1px black solid"value=" " oninput="handleRadioHall(),handleRadioBaker(),handleRadioWeather(),handleRadioOther()"><br></p>
   
 <p>Please select a Previous Employer:
       <input type="radio" id="Hall" name="profile" value="HALLIBURTON" onchange="handleComp()" onclick="handleCompentency(),enableSubmit()" disabled>
