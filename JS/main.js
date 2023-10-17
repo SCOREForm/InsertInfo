@@ -248,11 +248,11 @@ function handleCompentency() {
     } else {
         document.getElementById('wl3').disabled = false;
     }
-    if (this.value == '01') {
-        document.getElementById('wl4').disabled = true;
-    } else {
-        document.getElementById('wl4').disabled = false;
-    }
+    // if (this.value == '01') {
+    //     document.getElementById('wl4').disabled = true;
+    // } else {
+    //     document.getElementById('wl4').disabled = false;
+    // }
 
     //For core services
     if (this.value == '01') {
