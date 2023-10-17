@@ -1008,6 +1008,7 @@ function clearcheckcore(){
         ele4[i].checked = false;
      }
   }
+//   <!-- Original Code 2      -->
 
 // function clearRadioButtonsAdv(){
 //     var ele = document.querySelectorAll("input[value= Advanced]");
