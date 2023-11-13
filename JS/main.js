@@ -1,9 +1,3 @@
-// function checkSpace(){
-//     var val = document.getElementById('myText').value;
-//     if(val.charAt(0)==" "){
-//       alert("Name field Cannot be empty")
-//     }
-//   }
 
 document.getElementById("UserName").addEventListener('keydown', function (e) {
     if (this.value.length === 0 && e.which === 32) e.preventDefault();
@@ -17,31 +11,7 @@ function handleComp() {
         document.getElementById('comp').disabled = false;
     }
 }
- 
-function handleExp() {
-    if (this.value == '01') {
-        document.getElementById('exp').disabled = true;
-    } else {
-        document.getElementById('exp').disabled = false;
-    }
-}
- 
-function handletechDev() {
-    if (this.value == '01') {
-        document.getElementById('tech-dev').disabled = true;
-    } else {
-        document.getElementById('tech-dev').disabled = false;
-    }
-}
-
-function handletechtest() {
-    if (this.value == '01') {
-        document.getElementById('tech-tester').disabled = true;
-    } else {
-        document.getElementById('tech-tester').disabled = false;
-    }
-}
- 
+  
 function enableSubmit() {
     if (this.value == '01') {
         document.getElementById('submitbutton').disabled = true;
@@ -50,51 +20,12 @@ function enableSubmit() {
     }
 }
 
-function showDev(){
-    var element = document.getElementById("devTech");
-    element.style.display = "inline";
-}
-
-function hideDev(){
-    var element = document.getElementById("devTech");
-    element.style.display = "none";
-}
  
-function showTest(){
-    var element = document.getElementById("testerTech");
-    element.style.display = "inline";
-}
-
-function hideTest(){
-    var element = document.getElementById("testerTech");
-    element.style.display = "none";
-}
-
 function showName(){
     var x = document.getElementById("UserName").value;
     document.getElementById("CandName").innerHTML = x;
 }
 
-
-
-
-function showAGrade(){
-var e = document.getElementById("edu");
-var value = e.value;
-var text = e.options[e.selectedIndex].text;
-    if(text == "Diploma"){
-        document.getElementById("Grade").textContent="D";;
-    }
-    if(text == "Graduate"){
-        document.getElementById("Grade").textContent="C";;
-    }
-    if(text == "Post Graduate"){
-        document.getElementById("Grade").textContent="B";;
-    }
-    if(text == "Masters"){
-        document.getElementById("Grade").textContent="A";;
-    }
-}
 
 
 function showResult(){
@@ -784,7 +715,7 @@ function calculateGrade(){
 
     else if (document.getElementById("Grade").textContent=" ")
     {
-        document.getElementById("errorGrade").textContent="Your Candidate grade is either G08 or G09";
+        document.getElementById("errorGrade").textContent="The Person doesn't have minimum competency as per SLB norms to be hired as an EP";
     }
 }
 
@@ -1008,37 +939,3 @@ function clearcheckcore(){
         ele4[i].checked = false;
      }
   }
-//   <!-- Original Code 2      -->
-
-// function clearRadioButtonsAdv(){
-//     var ele = document.querySelectorAll("input[value= Advanced]");
-//      for(var i=0;i<ele.length;i++){
-//         ele[i].checked = false;
-//      }
-//   }
-
-//   function clearRadioButtonsExp(){
-//     var ele = document.querySelectorAll("input[value= Expert]");
-//      for(var i=0;i<ele.length;i++){
-//         ele[i].checked = false;
-//      }
-//   }
-  // // return x.length;
-    // alert(y.length);
-    // if(x.length >= 2){
-    //     console.log("Grade 2")
-    //  }
-    //  if(x.length < 2){
-    //     console.log("Grade 1")
-    //  }
-
-
-
-// function generateGrade(){
-//     if(countCheckboxes()>2){
-//        console.log("Grade 1")
-//     }
-//     else{
-//         console.log("Grade 2")  
-//     }
-// }   
