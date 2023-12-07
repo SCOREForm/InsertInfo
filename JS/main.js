@@ -696,15 +696,16 @@ function calculateGrade(){
 
     if(coreExpCheck.length >=3){
         if(wlExpCheck.length >=2 && f>=11 ||
-            h >=3 && f>=11){
+            h >=2 && f>=11 ||
+            wlAdvCheck.length >= 3 && f>=11){
                 document.getElementById("Grade").textContent="G11";   
             }
         else if(wlExpCheck.length >=1 && f>=8 && f<=10 ||
             h >=2 && f>=8 && f<=10) {
                 document.getElementById("Grade").textContent="G10"   
-            }   
+            }
     }
-
+ 
     else if(g >=3 && h >=1 && f>=6){
         document.getElementById("Grade").textContent="G09"  
     }
